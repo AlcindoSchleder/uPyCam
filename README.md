@@ -2,7 +2,9 @@
 Vamos construir o firmware micropython para a  [ESP32-CAM](https://www.banggood.com/custlink/GKmvayBgmP)  uma placa de desnevolvimento que você pode encontrar aqui [Banggood](https://www.banggood.com/custlink/GKDDoGOPqa) . Esta placa tem um sensor OV2640 sem qualquer chip (buffer) entre a ESP32 e a câmera. Existem muitas implementações para o Arduino ou diretamente usando Espressiif, mas eu queria usar MicroPython.
 Assim, este tutorial é sobre compilar e gravar uma versão do MicroPython com suporte para i2c na  [ESP32-CAM](https://www.banggood.com/custlink/DKKGOWrqBj). Adicionalmente, eu incluí um projeto com um Web Server para tirar fotos e importá-las por streaming. Você também pode fazer o download de um firmware já compilado, atualizar sua placa ESP32 e tirar suas fotos rapidamente. mas este não é o nosso objetivo, apesar de eu deixar este [firmware](https://github.com/AlcindoSchleder/esp-cam-micropython) que compilaremos aqui no repositório. O repositório da tsaarni tem uma wiki com instruções sobre como fazer isto, mas alguns dos tópicos não são facilmente compreendidos e eu tive alguns problemas com isto. Portanto eu tomei como base um segundo artigo e criei este aqui para que os makers amantes do python no Brasil possam desfrutar desta tecnologia.
 
-
+# uPyCam
+-
+## Tirando fotografias com a ESP32_CAM
 
 Fig. 1: Tirar Fotos com ESP32-CAM rodando MicroPython
 
@@ -16,7 +18,7 @@ Na seguinte tabela, você encontrará o hardware e o software que você usará n
 |USB-TTL|[![](https://uploads.filipeflop.com/2017/07/4MD16-1.jpg)]([https://www.filipeflop.com/produto/modulo-esp32-cam-com-camera-ov2640-2mp/](https://www.filipeflop.com/produto/modulo-esp32-cam-com-camera-ov2640-2mp/))|
 |esp32-camera-for-micropython|[![](https://avatars0.githubusercontent.com/u/85464?s=460&v=4)](https://github.com/tsaarni/esp32-camera-for-micropython)|
 |micropython-with-esp32-cam|[![](https://lemariva.com/storage/temp/public/0c6/51f/27b/GitHub-Mark__400.png)](https://github.com/tsaarni/micropython-with-esp32-cam)|
-|uPyCam|[![](https://lemariva.com/storage/temp/public/0c6/51f/27b/GitHub-Mark__400.png)](https://github.com/lemariva/uPyCam)|
+|uPyCam|Este repositório|
 |||
 
 ## DIY - Faça você mesmo
