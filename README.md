@@ -1,10 +1,11 @@
-
-Vamos construir o firmware micropython para a  [ESP32-CAM](https://www.banggood.com/custlink/GKmvayBgmP)  uma placa de desnevolvimento que você pode encontrar aqui [Banggood](https://www.banggood.com/custlink/GKDDoGOPqa) . Esta placa tem um sensor OV2640 sem qualquer chip (buffer) entre a ESP32 e a câmera. Existem muitas implementações para o Arduino ou diretamente usando Espressiif, mas eu queria usar MicroPython.
-Assim, este tutorial é sobre compilar e gravar uma versão do MicroPython com suporte para i2c na  [ESP32-CAM](https://www.banggood.com/custlink/DKKGOWrqBj). Adicionalmente, eu incluí um projeto com um Web Server para tirar fotos e importá-las por streaming. Você também pode fazer o download de um firmware já compilado, atualizar sua placa ESP32 e tirar suas fotos rapidamente. mas este não é o nosso objetivo, apesar de eu deixar este [firmware](https://github.com/AlcindoSchleder/esp-cam-micropython) que compilaremos aqui no repositório. O repositório da tsaarni tem uma wiki com instruções sobre como fazer isto, mas alguns dos tópicos não são facilmente compreendidos e eu tive alguns problemas com isto. Portanto eu tomei como base um segundo artigo e criei este aqui para que os makers amantes do python no Brasil possam desfrutar desta tecnologia.
-
 # uPyCam
--
+
 ## Tirando fotografias com a ESP32_CAM
+
+### Tutorial para preparar um ambiente de desenvolvimento com Toolchain e ESP-IDF para MicroPyhton
+
+- Vamos construir o firmware micropython para a  [ESP32-CAM](https://www.banggood.com/custlink/GKmvayBgmP)  uma placa de desnevolvimento que você pode encontrar aqui [Banggood](https://www.banggood.com/custlink/GKDDoGOPqa) . Esta placa tem um sensor OV2640 sem qualquer chip (buffer) entre a ESP32 e a câmera. Existem muitas implementações para o Arduino ou diretamente usando Espressiif, mas eu queria usar MicroPython.
+Assim, este tutorial é sobre compilar e gravar uma versão do MicroPython com suporte para i2c na  [ESP32-CAM](https://www.banggood.com/custlink/DKKGOWrqBj). Adicionalmente, eu incluí um projeto com um Web Server para tirar fotos e importá-las por streaming. Você também pode fazer o download de um firmware já compilado, atualizar sua placa ESP32 e tirar suas fotos rapidamente. mas este não é o nosso objetivo, apesar de eu deixar este [firmware](https://github.com/AlcindoSchleder/esp-cam-micropython) que compilaremos aqui no repositório. O repositório da tsaarni tem uma wiki com instruções sobre como fazer isto, mas alguns dos tópicos não são facilmente compreendidos e eu tive alguns problemas com isto. Portanto eu tomei como base um segundo artigo e criei este aqui para que os makers amantes do python no Brasil possam desfrutar desta tecnologia.
 
 Fig. 1: Tirar Fotos com ESP32-CAM rodando MicroPython
 
